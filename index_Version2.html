@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IH NASRI — Portfolio</title>
+  <meta name="description" content="Portfolio and projects of IH NASRI" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/favicon.svg" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">IH NASRI</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="#projects">See Work</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Hello — I'm IH NASRI</h1>
+          <p>Developer &amp; problem-solver building accessible and maintainable web experiences.</p>
+          <p class="hero-actions">
+            <a class="btn primary" href="#projects">View portfolio</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-media">
+          <img src="images/hero-placeholder.svg" alt="IH NASRI" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>Short bio: I build web apps, websites, and automation tooling. I care about performance, accessibility and clean code.</p>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Node / API integration</li>
+        <li>Responsive design</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <img src="images/project-1.svg" alt="Project 1 screenshot" />
+          <h3>Project One</h3>
+          <p>Short description of the project and what it solves.</p>
+          <p><a class="link" href="#">View on GitHub</a></p>
+        </article>
+
+        <article class="project">
+          <img src="images/project-2.svg" alt="Project 2 screenshot" />
+          <h3>Project Two</h3>
+          <p>Short description of the project and the technologies used.</p>
+          <p><a class="link" href="#">Live demo</a></p>
+        </article>
+
+        <article class="project">
+          <img src="images/project-3.svg" alt="Project 3 screenshot" />
+          <h3>Project Three</h3>
+          <p>Short description of the project and results.</p>
+          <p><a class="link" href="#">Read case study</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>If you'd like to work together, send an email or fill the form below.</p>
+
+      <form id="contact-form" class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+        <label>
+          Name
+          <input name="name" type="text" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Send</button>
+          <button type="button" id="copy-email" class="btn">Copy Email</button>
+        </div>
+        <p class="form-note">Or email directly: <a id="email-link" href="mailto:your@email.com">your@email.com</a></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> IH NASRI. Built with ❤️ — <a href="https://github.com/ihnasri71/IH-NASRI-G">Source</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
