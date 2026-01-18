@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages
+# OPTIONAL: Uncomment and use if you want automatic publishing to gh-pages
+# This example builds and deploys a static root site to gh-pages using actions.
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # If you have a build step, add it here (npm install / build). For this static site, none required.
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
